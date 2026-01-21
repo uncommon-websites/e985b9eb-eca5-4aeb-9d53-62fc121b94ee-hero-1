@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section Recreation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #EFEFE9;
+            color: #1a1a1a;
+        }
+        .font-serif-custom {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <!-- Navigation -->
+    <header class="w-full px-6 py-8 md:px-12 md:py-10 flex justify-between items-start">
+        <!-- Logo -->
+        <div class="flex-shrink-0 flex items-center gap-3">
+            <svg width="40" height="32" viewBox="0 0 40 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect y="0" width="28" height="4" fill="#1e40af"/>
+                <rect y="9" width="40" height="4" fill="#1e40af"/>
+                <rect y="18" width="34" height="4" fill="#1e40af"/>
+                <rect y="27" width="28" height="4" fill="#1e40af"/>
+            </svg>
+            <span class="text-xl font-bold tracking-tight text-[#1a1a1a]">Mare Liberum</span>
+        </div>
+
+        <!-- Menu & Search -->
+        <div class="flex items-center gap-8 md:gap-10">
+            <nav class="hidden md:flex gap-8 text-[15px] font-normal tracking-wide" style="color: #334155;">
+                <a href="#" class="hover:text-black transition-colors">Navigation Team</a>
+                <a href="#" class="hover:text-black transition-colors">Investment Thesis</a>
+                <a href="#" class="hover:text-black transition-colors">Partnerships</a>
+                <a href="#" class="hover:text-black transition-colors">Perspectives</a>
+            </nav>
+            <button class="text-gray-700 hover:text-black">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Content -->
+    <main class="flex-grow flex flex-col justify-between">
+        <!-- Text Section -->
+        <div class="px-6 md:px-12 pt-16 pb-20 md:pt-24 md:pb-32 max-w-7xl">
+            <h1 class="font-serif-custom text-[3.5rem] leading-[1.1] md:text-[5.5rem] md:leading-[1.1]" style="color: #1a1a1a;">
+                Unlocking the <span class="italic font-normal">Freedom of the Sea</span> through critical tech.
+            </h1>
+            <p class="mt-8 text-xl md:text-2xl max-w-2xl font-light" style="color: #334155;">
+                Mare Liberum invests in dual-use maritime technologies ahead of geopolitical inflections to deliver outsized returns and national security.
+            </p>
+            <div class="mt-10">
+                <a href="#" class="inline-block px-8 py-4 text-white font-medium text-lg transition-transform hover:scale-105" style="background-color: #1e40af;">Partner With Us</a>
+            </div>
+        </div>
+
+        <!-- Image Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 w-full h-[600px] md:h-[700px]">
+            <!-- Image 1: Woman on Red -->
+            <div class="relative w-full h-full overflow-hidden group">
+                <img src="https://placehold.co/600x900/b91c1c/e5e5e5?text=+" alt="Woman portrait" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <!-- Overlay to mimic the photo style slightly -->
+                <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/10"></div>
+                <!-- Small icon in bottom left corner like screenshot -->
+                <div class="absolute bottom-4 left-4 text-white/50">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12.516 2.17a.75.75 0 00-1.032 0 11.209 11.209 0 01-7.877 3.08.75.75 0 00-.722.515A12.74 12.74 0 002.25 9.75c0 5.942 4.064 10.933 9.563 12.348a.749.749 0 00.374 0c5.499-1.415 9.563-6.406 9.563-12.348 0-1.352-.272-2.636-.759-3.808a.75.75 0 00-.772-.515 11.209 11.209 0 01-7.703-3.258zM12 4.004c2.512 0 4.86-1.09 6.663-2.855a9.759 9.759 0 01.587 2.536 12.75 12.75 0 01-7.25 12.065 12.75 12.75 0 01-7.25-12.065c0-.89.105-1.75.3-2.576A9.21 9.21 0 0112 4.004z" clip-rule="evenodd" />
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Image 2: Man on White -->
+            <div class="relative w-full h-full overflow-hidden group">
+                <img src="https://placehold.co/600x900/f9fafb/374151?text=+" alt="Man at table" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            </div>
+
+            <!-- Image 3: Man on Gray -->
+            <div class="relative w-full h-full overflow-hidden group">
+                <img src="https://placehold.co/600x900/d1d5db/1f2937?text=+" alt="Man on blocks" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            </div>
+
+            <!-- Image 4: Dark Background -->
+            <div class="relative w-full h-full overflow-hidden group">
+                <img src="https://placehold.co/600x900/1f2937/9ca3af?text=+" alt="Portrait dark" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
